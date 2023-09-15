@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Rubik:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+@media (max-width: 480px){
+    .logo{
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 5rem;
+    }
+    ul{
+        width: 75%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    li{
+        margin: auto;
+    }
+    .inicio{
+        background-image: url('../image/fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    nav{
+        display: flex;
+    }
+    h1{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        color: #2e313D;
+    }
+    .sobreMi{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+    .sobreMi_{
+        width: 55%;
+        color: #717172;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: auto 40px;
+        text-align: center;
+        line-height: 2
+    }
+    .sobreMi__{
+        width: 45%;
+        display: inline-block;
+    }
+    .sobreMi__img{
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        font-family: Rubik;
+        font-weight: 300;
+        text-decoration: none;
+        color: #717172;
+    }
+    h2{
+        text-align: center;
+        margin: auto;
+        padding: 20px 30px;
+        color: #2e313D;
+    }
+    .servicio{
+        height: 100vh;
+        text-align: center;
+    }
+    .card{
+        display: block;
+        height: 92vh;
+        width: 100%;
+        margin: auto;
+    }
+    .card_{
+        margin: 0 50px;
+        display: inline-block;
+        height: 578px;
+        width: 314px;
+        background-color: blueviolet;
+        border-radius: 20px;
+        justify-content: space-between;
+        transition: transform 0.3s ease;
+    }
+    .card_:hover{
+        transform: translateY(-10px);
+    }
+    .contacto_{
+        display: flex;
+    }
+    .contacto__{
+        width: 50%;
+    }
+    form{
+        width: 60%;
+        padding: 10px;
+    }
+    input{
+        width: 100%;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    input:focus{
+        outline: none;
+    }
+    textarea{
+        width: 100%;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    textarea:focus{
+        outline: none;
+    }
+    .logo_redS{
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+    }
+}
