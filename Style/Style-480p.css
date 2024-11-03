@@ -1,93 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Rubik:wght@700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: Rubik;
 }
-@media (max-width: 480px){
-    .logo{
-        width: 25%;
+
+@media (max-width: 480px) {
+    .logo {
         margin: 0;
         padding: 0;
         text-align: left;
         font-size: 5rem;
     }
-    ul{
-        width: 75%;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        
+
+    ul {
+        display: none;
     }
-    li{
-        margin: auto;
-    }
-    .inicio{
-        background-image: url('../image/fondo.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-    nav{
+
+    nav {
         display: flex;
     }
-    h1{
+
+    .inicio {
+        display: flex;
+    }
+
+    h1 {
         position: absolute;
-        top: 35%;
-        left: 50%;
+        top: 150px;
+        left: 170px;
         transform: translate(-50%, -50%);
-        font-size: 4rem;
         color: #2e313D;
     }
-    .sobreMi{
+
+    .inicio_inf {
+        padding: 50px 0 !important;
+    }
+
+    .cursos {
+        position: relative;
+        margin: 0 20px !important;
+        overflow: hidden;
+    }
+
+    .cursos__ {
         display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 24px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .sobreMi {
         width: 100%;
         height: 100vh;
     }
-    .sobreMi_{
-        width: 55%;
+
+    .sobreMi_ {
         color: #717172;
         font-size: 1.5rem;
         display: inline-block;
-        margin: auto 40px;
+        margin: auto 20px;
         text-align: center;
         line-height: 2
     }
-    .sobreMi__{
-        width: 45%;
+
+    .sobreMi_img {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sobreMi__ {
         display: inline-block;
     }
-    .sobreMi__img{
+
+    .sobreMi__img {
         width: 100%;
         height: 100%;
     }
-    a{
+
+    a {
         font-family: Rubik;
         font-weight: 300;
         text-decoration: none;
         color: #717172;
     }
-    h2{
+
+    h2 {
         text-align: center;
         margin: auto;
         padding: 20px 30px;
         color: #2e313D;
     }
-    .servicio{
+
+    .servicio {
         height: 100vh;
         text-align: center;
     }
-    .card{
+
+    .card {
         display: block;
         height: 92vh;
         width: 100%;
         margin: auto;
     }
-    .card_{
+
+    .card_ {
         margin: 0 50px;
         display: inline-block;
         height: 578px;
@@ -97,20 +134,25 @@
         justify-content: space-between;
         transition: transform 0.3s ease;
     }
-    .card_:hover{
+
+    .card_:hover {
         transform: translateY(-10px);
     }
-    .contacto_{
+
+    .contacto_ {
         display: flex;
     }
-    .contacto__{
+
+    .contacto__ {
         width: 50%;
     }
-    form{
+
+    form {
         width: 60%;
         padding: 10px;
     }
-    input{
+
+    input {
         width: 100%;
         font-size: 18px;
         box-sizing: border-box;
@@ -118,10 +160,12 @@
         border: none;
         border-bottom: 1px solid black;
     }
-    input:focus{
+
+    input:focus {
         outline: none;
     }
-    textarea{
+
+    textarea {
         width: 100%;
         font-size: 18px;
         box-sizing: border-box;
@@ -129,10 +173,12 @@
         border: none;
         border-bottom: 1px solid black;
     }
-    textarea:focus{
+
+    textarea:focus {
         outline: none;
     }
-    .logo_redS{
+
+    .logo_redS {
         height: 30px;
         width: 30px;
         border-radius: 50px;
