@@ -8,10 +8,13 @@
 
 @media (max-width: 480px) {
     .logo {
-        margin: 0;
+        position: relative;
+        top: 5px;
+        margin: 0 auto;
         padding: 0;
         text-align: left;
-        font-size: 5rem;
+        height: 40px;
+
     }
 
     ul {
@@ -20,22 +23,36 @@
 
     nav {
         display: flex;
+        background-color: #0f2a92;
+        height: 50px;
+    }
+
+    .inicio__img{
+        width: 50%;
+    }
+    
+    .inicio__img img{
+        width: 100%;
+        border-radius: 15px;
     }
 
     .inicio {
         display: flex;
+        margin: 5px 10px;
     }
 
     h1 {
-        position: absolute;
-        top: 150px;
-        left: 170px;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        left: 110px;
         transform: translate(-50%, -50%);
         color: #2e313D;
+        margin-bottom: 15px;
     }
 
     .inicio_inf {
-        padding: 50px 0 !important;
+       margin-bottom: 15px;
     }
 
     .cursos {
@@ -49,6 +66,13 @@
         transition: transform 0.5s ease;
     }
 
+    .cursos__img{
+        height: 40px;
+    }
+    .cursos__img img{
+        height: 100%;
+        margin: 0 5px;
+    }
     .carousel-btn {
         position: absolute;
         top: 50%;
@@ -71,31 +95,22 @@
     }
 
     .sobreMi {
-        width: 100%;
-        height: 100vh;
+        height: auto;
+        margin: 0 5px;
     }
 
-    .sobreMi_ {
-        color: #717172;
-        font-size: 1.5rem;
-        display: inline-block;
-        margin: auto 20px;
+    .sobreMi h3{
         text-align: center;
+    }
+    .sobreMi_ {
+        /*color: #717172;*/
+        display: inline-block;
+        margin: 0 5px;
         line-height: 2
     }
 
-    .sobreMi_img {
-        min-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .sobreMi__ {
-        display: inline-block;
-    }
-
-    .sobreMi__img {
-        width: 100%;
-        height: 100%;
+    .foto{
+        display: none;
     }
 
     a {
@@ -113,38 +128,35 @@
     }
 
     .servicio {
-        height: 100vh;
+        height: auto;
         text-align: center;
     }
-
+    
     .card {
         display: block;
-        height: 92vh;
         width: 100%;
         margin: auto;
+        background-color: #F18E21;
     }
 
     .card_ {
-        margin: 0 50px;
+
+        background-color: #fff;
+        margin: 10px 20px;
         display: inline-block;
-        height: 578px;
-        width: 314px;
-        background-color: blueviolet;
         border-radius: 20px;
         justify-content: space-between;
         transition: transform 0.3s ease;
+        border: 1px solid #717172;
+    }
+    
+    .card_inf{
+        margin: 5px 5px 10px 5px;
     }
 
-    .card_:hover {
-        transform: translateY(-10px);
-    }
-
-    .contacto_ {
-        display: flex;
-    }
-
-    .contacto__ {
-        width: 50%;
+    .card_img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
     }
 
     form {
